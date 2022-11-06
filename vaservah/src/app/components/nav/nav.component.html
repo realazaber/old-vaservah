@@ -1,8 +1,14 @@
 <nav class="m-auto w-full bg-slate-700">
-  <div class="w-[80%] m-auto p-2 flex">
-    <a class="nav-link" [routerLink]="['/']">Home</a>
+  <div class="w-[80%] m-auto p-2 flex align-middle">
+    <a class="nav-link" [routerLink]="['/']">
+      <img
+        class="w-[40px] border border-round-3xl"
+        src="../../../favicon.ico"
+        alt="Mayor"
+      />
+    </a>
     <a class="nav-link" [routerLink]="['/about']">About</a>
     <a class="nav-link" [routerLink]="['/posts']">Posts</a>
-    <a class="nav-link ml-auto" [routerLink]="['/contact']">Contact</a>
+    <a class="nav-link phone:ml-auto" [routerLink]="['/contact']">Contact</a>
   </div>
 </nav>
