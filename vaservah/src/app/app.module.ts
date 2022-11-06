@@ -10,6 +10,7 @@ import { PostsComponent } from './pages/posts/posts.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PostComponent } from './components/post/post.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ErrorComponent } from './pages/error/error.component';
     ContactComponent,
     PostComponent,
     ErrorComponent,
+    FooterComponent,
     
   ],
   imports: [
