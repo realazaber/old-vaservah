@@ -7,6 +7,11 @@
     * {
         @apply duration-300;
     }
+    html {
+        body {
+            @apply overflow-x-hidden;
+        }
+    }
 
     .nav-link {
         @apply text-slate-200 mx-5 hover:text-slate-400;
