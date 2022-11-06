@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    transition-duration: 300ms;
+}
+
+@layer components {
+    .nav-link {
+        @apply text-slate-200 mx-5 hover:text-slate-400;
+    }
+}
