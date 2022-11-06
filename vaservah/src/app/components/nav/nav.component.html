@@ -1,6 +1,8 @@
-<nav class="m-auto w-[90%] bg-red-500">
-  <a class="nav-link" href="home">Home</a>
-  <a class="nav-link" href="about">about</a>
-  <a class="nav-link" href="posts">posts</a>
-  <a class="nav-link" href="contact">contact</a>
+<nav class="m-auto w-full bg-slate-700">
+  <div class="w-[80%] m-auto p-2 flex">
+    <a class="nav-link" [routerLink]="['/']">Home</a>
+    <a class="nav-link" [routerLink]="['/about']">About</a>
+    <a class="nav-link" [routerLink]="['/posts']">Posts</a>
+    <a class="nav-link ml-auto" [routerLink]="['/contact']">Contact</a>
+  </div>
 </nav>
