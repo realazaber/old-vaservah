@@ -1,7 +1,7 @@
 {
   "name": "vaservah",
   "version": "0.0.0",
-  "homepage": ".",
+  "homepage": "/vaservah/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
