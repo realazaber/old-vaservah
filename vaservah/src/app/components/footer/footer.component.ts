@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GetUrlsService } from 'src/app/services/get-urls.service';
+import { Link } from 'src/app/interfaces/Link';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private urls: GetUrlsService) { }
+
+  links: Link[] = [];
 
   ngOnInit(): void {
+    this.urls.getUrls().subscribe((data) => this.links = data);
   }
 
 }
