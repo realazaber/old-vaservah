@@ -1,14 +1,26 @@
 <nav class="m-auto w-full bg-slate-700">
-  <div class="w-[80%] m-auto p-2 flex align-middle">
-    <a class="nav-link" [routerLink]="['/']">
-      <img
-        class="w-[55px] border border-transparent rounded-3xl"
-        src="../../../favicon.ico"
-        alt="Mayor"
-      />
-    </a>
-    <a class="nav-link" [routerLink]="['/about']">About</a>
-    <a class="nav-link" [routerLink]="['/posts']">Posts</a>
-    <a class="nav-link phone:ml-auto" [routerLink]="['/contact']">Contact</a>
+  <div class="w-[80%] m-auto p-2 flex items-center">
+    <ng-container *ngFor="let link of links; let first = first; last as isLast">
+      <a
+        class="nav-link"
+        [routerLink]="['/', link.path]"
+        *ngIf="first; else normalLink"
+      >
+        <img
+          class="w-[55px] border border-transparent rounded-3xl"
+          src="../../../favicon.ico"
+          alt="Mayor"
+        />
+      </a>
+
+      <ng-template #normalLink>
+        <a
+          class="nav-link"
+          [class.end-link]="isLast"
+          [routerLink]="['/', link.path]"
+          >{{ link.path }}</a
+        >
+      </ng-template>
+    </ng-container>
   </div>
 </nav>
