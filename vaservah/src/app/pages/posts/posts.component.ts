@@ -18,7 +18,6 @@ export class PostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.postsData.getPosts(15).subscribe((data) => {
-      //this.posts = data;
       this.tmpPosts = data;
       this.tmpPosts.forEach(element => {
         this.posts.push(new Post(element.id, element.title.rendered, element.content.rendered, element.featured_media_src_url, element.slug, element.link));
