@@ -11,14 +11,13 @@ export class GetPostsService {
 
   constructor(private http: HttpClient) { }
 
-  posts: Post[] = [];
-  post: Post = {};
+  baseUrl: string = "https://vaservah.azaber.com/wp-json/wp/v2/posts";
 
-  getPosts(): Post[] {
-    return this.posts;
+  getPosts(postLimit: Number): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.baseUrl}/?limit=${postLimit}`);
   }
 
-  getPost(postId: Number): Post {
-    return this.post;
+  getPost(postId: Number): Observable<Post> {
+    return this.http.get<Post>(`${this.baseUrl}/${postId}`);
   }
 }
