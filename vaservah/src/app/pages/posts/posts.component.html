@@ -4,11 +4,11 @@
   >
     <app-post
       class="bg-slate-100 border rounded-lg h-80 mt-8 tablet:m-3 w-full tablet:w-[40%] phablet:w-[30%] desktop:w-1/4 flex flex-col justify-center items-center pt-0"
-      *ngFor="let post of tmpPosts"
+      *ngFor="let post of posts"
       [postId]="post.id"
-      [title]="post.title.rendered"
-      [excerpt]="post.excerpt.rendered"
-      [imgSrc]="post.featured_media_src_url"
+      [title]="post.title"
+      [excerpt]="post.excerpt"
+      [imgSrc]="post.teaserPath"
     ></app-post>
   </div>
 </div>
