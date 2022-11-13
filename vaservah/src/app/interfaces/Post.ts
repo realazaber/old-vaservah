@@ -2,6 +2,7 @@ export class Post {
     id: number;
     title: string;
     body: string;
+    excerpt: string;
     teaserPath: string;
 
     postPath: string;
@@ -12,6 +13,7 @@ export class Post {
         this.id = id;
         this.title = title;
         this.body = body;
+        this.excerpt = body.substring(0, 50);
         this.teaserPath = teaserPath;
         this.postPath = postPath;
         this.wpPostPath = wpPostPath;
