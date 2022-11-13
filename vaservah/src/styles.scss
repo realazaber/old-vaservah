@@ -10,13 +10,21 @@
     html {
         body {
             @apply overflow-x-hidden text-slate-600;
+            
+            h3 {
+                @apply text-2xl;
+            }
+
+            p {
+                @apply text-xl;
+            }
         }
     }
 
     .nav-link {
-        @apply text-slate-200 mx-5 hover:text-slate-400 flex items-center capitalize;
+        @apply text-slate-200 text-xl mx-5 hover:text-slate-400 flex items-center capitalize;
     }
     .end-link {
-        @apply text-slate-200 mx-5 hover:text-slate-400 flex items-center capitalize phone:ml-auto;
+        @apply text-slate-200 text-xl mx-5 hover:text-slate-400 flex items-center capitalize phone:ml-auto;
     }
 }
