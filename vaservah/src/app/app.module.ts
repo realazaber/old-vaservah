@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-import { PathLocationStrategy, LocationStrategy } from '@angular/common';
+import { PathLocationStrategy, LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -35,7 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [ { provide: LocationStrategy, useClass: PathLocationStrategy } ],
+  providers: [ { provide: LocationStrategy, useClass: HashLocationStrategy } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
