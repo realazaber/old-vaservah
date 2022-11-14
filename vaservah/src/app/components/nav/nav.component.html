@@ -1,5 +1,5 @@
 <nav class="m-auto w-full bg-slate-700">
-  <div class="w-[80%] m-auto p-2 flex items-center">
+  <div class="flex w-[80%] m-auto p-2 items-center">
     <ng-container *ngFor="let link of links; let first = first; last as isLast">
       <a
         class="nav-link"
@@ -15,7 +15,7 @@
 
       <ng-template #normalLink>
         <a
-          class="nav-link"
+          class="nav-link hidden tablet:block"
           [class.end-link]="isLast"
           [routerLink]="['/', link.path]"
           >{{ link.path }}</a
@@ -24,3 +24,26 @@
     </ng-container>
   </div>
 </nav>
+
+<div class="flex absolute top-5 right-24">
+  <div class="dropdown inline ml-auto">
+    <button
+      class="tablet:hidden btn btn-lg dropdown-toggle bg-slate-500 text-slate-50"
+      type="button"
+      id="dropdownMenuButton"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    ></button>
+    <div
+      class="dropdown-menu dropdown-menu-right"
+      aria-labelledby="dropdownMenuButton"
+    >
+      <ng-container *ngFor="let link of links">
+        <a class="dropdown-item capitalize" [routerLink]="['/', link.path]">{{
+          link.path
+        }}</a>
+      </ng-container>
+    </div>
+  </div>
+</div>
