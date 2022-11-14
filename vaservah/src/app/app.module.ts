@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-import { PathLocationStrategy, LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PostComponent } from './components/post/post.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SinglePostComponent } from './pages/single-post/single-post.component';
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { FooterComponent } from './components/footer/footer.component';
     PostComponent,
     ErrorComponent,
     FooterComponent,
+    SinglePostComponent,
+    TestComponent,
     
   ],
   imports: [
