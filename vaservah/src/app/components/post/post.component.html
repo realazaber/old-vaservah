@@ -1,9 +1,16 @@
-<img
-  class="w-full h-[60%] object-cover pt-0 mt-[-2rem] rounded-t-lg"
-  src="{{ imgSrc }}"
-  alt="{{ title }}"
-/>
-<div class="h-[40%] p-3">
-  <h3>{{ title }}</h3>
+<a class="w-full h-[60%] pt-0" [routerLink]="['/posts/', postId]">
+  <img
+    class="rounded-t-lg h-full w-full object-cover"
+    src="{{ imgSrc }}"
+    alt="{{ title }}"
+  />
+</a>
+<div class="w-full h-[40%] px-8 py-3 text-left">
+  <h3
+    class="w-full underline hover:cursor-pointer"
+    [routerLink]="['/posts/', postId]"
+  >
+    {{ title }}
+  </h3>
   <p>{{ excerpt }}</p>
 </div>
