@@ -16,7 +16,6 @@ import { PostComponent } from './components/post/post.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SinglePostComponent } from './pages/single-post/single-post.component';
-import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
@@ -31,7 +30,6 @@ import { TestComponent } from './components/test/test.component';
     ErrorComponent,
     FooterComponent,
     SinglePostComponent,
-    TestComponent,
     
   ],
   imports: [
