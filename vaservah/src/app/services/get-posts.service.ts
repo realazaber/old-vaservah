@@ -17,7 +17,7 @@ export class GetPostsService {
     return this.http.get<Post[]>(`${this.baseUrl}/?limit=${postLimit}`);
   }
 
-  getPost(postId: Number): Observable<Post> {
-    return this.http.get<Post>(`${this.baseUrl}/${postId}`);
+  getPost(postId: Number): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/${postId}`);
   }
 }
