@@ -14,7 +14,7 @@ export class SinglePostComponent implements OnInit {
   constructor(private route: ActivatedRoute, private postsData: GetPostsService) { }
 
   post: Post = new Post(0, "title", "body", "teaser", "postPath", "wpPostPath");
-  postId: number = 20;
+  postId: number = 0;
   strPostId: any = "";
 
   ngOnInit(): void {
