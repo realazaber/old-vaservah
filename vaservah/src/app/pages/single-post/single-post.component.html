@@ -1,3 +1,9 @@
-<p>{{ postId }}</p>
+<div>
+  <div>
+    <img src="{{ post.teaserPath }}" alt="{{ post.title }}" />
+    <h1>{{ post.title }}</h1>
+  </div>
 
-<h1>{{ post.title }}</h1>
+  <p>{{ post.body }}</p>
+  <p>Category: {{ post.category }}</p>
+</div>

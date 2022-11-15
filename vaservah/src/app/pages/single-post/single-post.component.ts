@@ -28,6 +28,9 @@ export class SinglePostComponent implements OnInit {
         this.post.teaserPath = data.featured_media_src_url;
         this.post.postPath = data.slug;
         this.post.wpPostPath = data.link;
+
+        let newPost = new Post(data.id, data.title.rendered, data.content.rendered, data.featured_media_src_url, data.slug, data.link);
+        this.post = newPost;
     })
   }
 
