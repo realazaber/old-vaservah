@@ -15,7 +15,7 @@ export class Post {
         this.body = body;
 
         // Set excerpt as substring of body.
-        this.excerpt = body.substring(0, 50);
+        this.excerpt = body.substring(0, 30);
         
         this.teaserPath = teaserPath;
         this.postPath = postPath;
