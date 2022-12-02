@@ -1,4 +1,5 @@
-<nav class="m-auto w-full bg-slate-700">
+<!-- Desktop menu -->
+<nav class="m-auto w-full bg-bg-sec">
   <div class="flex w-[80%] m-auto p-2 items-center">
     <ng-container *ngFor="let link of links; let first = first; last as isLast">
       <a
@@ -6,11 +7,7 @@
         [routerLink]="['/', link.path]"
         *ngIf="first; else normalLink"
       >
-        <img
-          class="w-[55px] border border-transparent rounded-3xl"
-          src="assets/favicon.ico"
-          alt="Mayor"
-        />
+        <img src="assets/images/title-txt.webp" alt="Mayor" />
       </a>
 
       <ng-template #normalLink>
@@ -25,6 +22,7 @@
   </div>
 </nav>
 
+<!-- Mobile menu -->
 <div class="flex absolute top-5 right-24">
   <div class="dropdown inline ml-auto">
     <button
