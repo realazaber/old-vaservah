@@ -4,8 +4,8 @@ staticPort: 1668
 reloadPort: 2667
 hostName: localhost
 projectName: vaservah
-homeFolder: /home/swagoverlord/Desktop/vaservah/vaservah
+homeFolder: C:\Users\coolp\Desktop\vaservah\vaservah
 distFolder: dist/vaservah
-outDir: /home/swagoverlord/Desktop/vaservah/vaservah/dist/static
+outDir: C:\Users\coolp\Desktop\vaservah\vaservah\dist\static
 handle404: ''
 allowErrorCollect: false
