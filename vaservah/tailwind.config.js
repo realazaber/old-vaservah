@@ -2,6 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
+    extend: {
+      colors: {
+        'bg-pri': '#000000',
+        'bg-sec': '#171615',
+        'txt-pri': '#ffffff',
+        'txt-sec': '#6bc349',
+      },
+    },
     screens: {
       phone: "480px",
       // => @media (min-width: 480px) { ... }
