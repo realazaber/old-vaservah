@@ -18,7 +18,7 @@ module.exports = {
       // => @media (min-width: 760px) { ... }
 
       phablet: "950px",
-      // => @media (min-width: 900px) { ... }
+      // => @media (min-width: 950px) { ... }
 
       desktop: "1000px",
       // => @media (min-width: 1000px) { ... }
