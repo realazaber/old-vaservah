@@ -27,4 +27,8 @@
     .end-link {
         @apply text-txt-pri text-xl mx-5 hover:text-txt-sec flex items-center capitalize phone:ml-auto;
     }
+
+    .bg-bedrock {
+        background-image: url("./assets/images/bg-images/bedrock.png");
+    }
 }
