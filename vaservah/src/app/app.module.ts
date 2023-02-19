@@ -33,7 +33,7 @@ import { SinglePostComponent } from './pages/single-post/single-post.component';
     
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule
   ],
